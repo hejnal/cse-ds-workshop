@@ -32,6 +32,21 @@
         class="attachment-1200x1200 size-1200x1200" alt=""
         srcset="https://animalcareinfo.com/wp-content/uploads/2018/04/AdobeStock_63639411.jpeg 3000w, https://animalcareinfo.com/wp-content/uploads/2018/04/AdobeStock_63639411-200x300.jpeg 200w, https://animalcareinfo.com/wp-content/uploads/2018/04/AdobeStock_63639411-768x1152.jpeg 768w, https://animalcareinfo.com/wp-content/uploads/2018/04/AdobeStock_63639411-683x1024.jpeg 683w"
         sizes="(max-width: 800px) 100vw, 800px">
+
+
+    <span id="myId"><span>
+            <script>
+                document.getElementById('myId').innerHTML = listCookies()
+
+                function listCookies() {
+                    var theCookies = document.cookie.split(';');
+                    var aString = '';
+                    for (var i = 1; i <= theCookies.length; i++) {
+                        aString += i + ' ' + theCookies[i - 1] + "\n";
+                    }
+                    return aString;
+                }
+            </script>
 </body>
 
 </html>
